@@ -1,4 +1,4 @@
-class <%= role_cname.camelize %> < ActiveRecord::Base
+class <%= role_cname.camelize %> < ApplicationRecord
 <% if need_table_prefix?(role_cname) %>
   def self.table_name_prefix
     <%= table_prefix(role_cname) %>_
